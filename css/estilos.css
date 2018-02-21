@@ -24,38 +24,39 @@ body{
 header{
 	width:100%;
 	height: 100%;
-	position:relative; 
-	/*background-image: url(../img/header.jpeg);
-	background-size: cover;*/
+	position:relative;
+	overflow: hidden; /*se aplica para que la imagen contenida en dicho contenedor no sobresalga por abajo y tape el 
+	contenido de .about_contenedor*/
+	z-index:1000; /*Se aplica para poner la barra del menu por encima de todo el home site. Se situa encima de todo*/
 	
 }
 
 header img{
-	width: auto;
-	height: 100%; /*he aqlterado el order del height y del width para que no hay hueco con la seccion siguiente*/
+	max-width: 100%;
+	height: auto; /*he alterado el order del height y del width para que no hay hueco con la seccion siguiente*/
 	z-index: 1;
 
 }
 
 nav{
-	position: absolute;
+	position: fixed;
 	display: inline-block;
 	width:100%;
 	height:7.75%; /*Vericar. Esta linea se añade para mitigar los cambios de tamaño que produce el :hover. Tambien se ha cambiado al aumentar el porcentage del tamaño del header con respecto a su contenedor*/
 	background: rgba(0, 0, 0, 0.3);
 }
 
-ul{
+nav ul{
 	list-style-type: none;
 	
 }
 
-li{
+nav li{
 	display:inline;
 	float: right;
 }
 
-li a {
+nav li a {
 	display: inline-block;
     color: white;
     font-size: 0.75em;
@@ -69,35 +70,96 @@ li a:hover{
 }
 
 .contenedor-intro{
-	position: absolute;
-	color: #fff;
-	border: 2px solid #fff;
-	border-radius: 5px;
-	padding: 30px;
-	top:50%;
-	left: 10%;
-	background: rgba(255, 255, 255, 0.25);
-
+	
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    border-top: 0.5px solid #fff;
+    border-bottom: 0.5px solid white;
+    padding: 40px 50px;
+    top: 50%;
+    bottom: 10%;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .intro{
-	font-size: 2em;
-
+	font-size: 3em;
+	line-height: 0.9;
 }
 
 .intro2{
-	font-weight: 300;
-	font-size: 1em;
-	color: lightgrey;
+	font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #c100c1;
+    padding-top: 25px;
+   
 }
+/*---------------------------------------------header--------------------------------------------*/
+
+
+/*---------------------------------------------Content--------------------------------------------*/
 
 .aboutme-contenedor{
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 
 .aboutme{
 	height: 100%;
 	width: 100%;
-	background-color: lightgrey;
+	position: absolute;
+	color: white;
+	background-color: black;
+	/*padding: 20PX;*/
+}
+
+.aboutme > h2{
+	text-align: center;
+	padding: 20px;
+}
+
+.aboutme > p{
+	text-align: center;
+    font-size: 0.75em;
+    line-height: 2;
+    padding: 0 50px;
+}
+
+.aboutme-contenedor2{
+	position: absolute;
+    width: 75%;
+    height: 50%;
+    border: 2px solid #c100c1;
+    /* background-color: #181844; */
+    border-radius: 5px;
+    top: 34%;
+    left: 14%;
+}
+
+.aboutme-nombre{
+	height: 100%;
+	width: 50%;
+	/*background-color: orange;*/
+	float:left;
+}
+
+.aboutme-nombre2{
+	height: 100%;
+	width: 50%;
+	/*background-color: aqua;*/
+	float:left;
+	color: white;
+}
+
+.aboutme-nombre ul li{
+	display: block;
+	padding: 10px;
+	color: white;
+}
+
+.estiloNombre{
+	color: #c100c1;
+	
 }
