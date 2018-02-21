@@ -1,0 +1,103 @@
+*{
+	box-sizing:border-box;
+	padding: 0px;
+	margin:0px;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding:0px;
+	margin:0px;
+	font-family: montserrat, sans-serif;
+}
+
+#contenedor{
+	height: 100%;
+	width:100%;
+	/*background-image: url(../img/header.jpeg);
+	background-size: cover;*/
+	
+}
+
+header{
+	width:100%;
+	height: 100%;
+	position:relative; 
+	/*background-image: url(../img/header.jpeg);
+	background-size: cover;*/
+	
+}
+
+header img{
+	width: auto;
+	height: 100%; /*he aqlterado el order del height y del width para que no hay hueco con la seccion siguiente*/
+	z-index: 1;
+
+}
+
+nav{
+	position: absolute;
+	display: inline-block;
+	width:100%;
+	height:7.75%; /*Vericar. Esta linea se añade para mitigar los cambios de tamaño que produce el :hover. Tambien se ha cambiado al aumentar el porcentage del tamaño del header con respecto a su contenedor*/
+	background: rgba(0, 0, 0, 0.3);
+}
+
+ul{
+	list-style-type: none;
+	
+}
+
+li{
+	display:inline;
+	float: right;
+}
+
+li a {
+	display: inline-block;
+    color: white;
+    font-size: 0.75em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+	border-bottom: 5px solid #663399;
+}
+
+.contenedor-intro{
+	position: absolute;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 30px;
+	top:50%;
+	left: 10%;
+	background: rgba(255, 255, 255, 0.25);
+
+}
+
+.intro{
+	font-size: 2em;
+
+}
+
+.intro2{
+	font-weight: 300;
+	font-size: 1em;
+	color: lightgrey;
+}
+
+.aboutme-contenedor{
+	height: 100%;
+	width: 100%;
+}
+
+.aboutme{
+	height: 100%;
+	width: 100%;
+	background-color: lightgrey;
+}
