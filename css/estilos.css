@@ -38,6 +38,10 @@ header img{
 
 }
 
+
+/*-------  Menu  ---------*/
+
+
 nav{
 	position: fixed;
 	display: inline-block;
@@ -91,7 +95,7 @@ li a:hover{
 	font-weight: 400;
     text-transform: uppercase;
     font-size: 15px;
-    color: #c100c1;
+    color: #a658f5;
     padding-top: 25px;
    
 }
@@ -127,48 +131,59 @@ li a:hover{
     padding: 0 50px;
 }
 
-.aboutme-contenedor2{
+/*==================   recuadro    ===============*/
+
+.aboutme-recuadro{
 	position: absolute;
     width: 75%;
     height: 50%;
-    border: 2px solid #c100c1;
+    /*border: 2px solid #c100c1;*/
     /* background-color: #181844; */
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     top: 34%;
     left: 14%;
 }
 
-.aboutme-nombre{
-	height: 100%;
-	width: 50%;
+.aboutme-recuadro1{
+	height: 50%;
+	width: 100%;
 	/*background-color: orange;*/
-	float:left;
+	
+	border-bottom: 1px solid #663399;
 }
 
-.aboutme-nombre2{
-	height: 100%;
-	width: 50%;
+.aboutme-recuadro2{
+	height: 50%;
+	width: 100%;
 	/*background-color: aqua;*/
-	float:left;
-	color: white;
 }
 
-.aboutme-nombre ul{
+/*.iconos ul{
+	width:50%;
+}*/
+
+
+.iconos li{
+    display: inline-block;
+    width: 24%;
+}
+
+.fa-birthday-cake {
+    font-size: 1.5em;
+    border: 2px solid #663399;
+    border-radius: 100px;
+    padding: 7px;
+    color:  #663399;
+    
+}
+
+.datos_iconos li{
 	display: inline-block;
-    margin-top: 82px;
-    margin-left: 47px;
-	
-}
-
-.aboutme-nombre ul li{
-	display: inline-block;
-	padding: 10px;
-	color: white;
-	padding: 15 40px;
-}
-
-.estiloNombre{
-	color: #c100c1;
-	font-weight: 900;
-	
+	width:24%;
+    font-size: 0.75em;
+    color: white;
+    /* padding: 10px; */
+   /* padding-top: 66px;
+    padding-left: 5px;*/
+   
 }
