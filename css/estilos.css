@@ -38,6 +38,9 @@ header img{
 
 }
 
+strong{
+	color: steelblue;
+}
 
 /*-------  Menu  ---------*/
 
@@ -46,8 +49,9 @@ nav{
 	position: fixed;
 	display: inline-block;
 	width:100%;
-	height:7.75%; /*Vericar. Esta linea se añade para mitigar los cambios de tamaño que produce el :hover. Tambien se ha cambiado al aumentar el porcentage del tamaño del header con respecto a su contenedor*/
+	height:6.75%; /*Vericar. Esta linea se añade para mitigar los cambios de tamaño que produce el :hover. Tambien se ha cambiado al aumentar el porcentage del tamaño del header con respecto a su contenedor*/
 	background: rgba(0, 0, 0, 0.3);
+	z-index: 1000;	
 }
 
 nav ul{
@@ -69,8 +73,8 @@ nav li a {
     text-decoration: none;
 }
 
-li a:hover{
-	border-bottom: 5px solid #663399;
+nav li a:hover{
+	border-bottom: 5px solid steelblue;
 }
 
 .contenedor-intro{
@@ -95,7 +99,7 @@ li a:hover{
 	font-weight: 400;
     text-transform: uppercase;
     font-size: 15px;
-    color: #a658f5;
+    color: steelblue;
     padding-top: 25px;
    
 }
@@ -122,6 +126,8 @@ li a:hover{
 .aboutme > h2{
 	text-align: center;
 	padding: 20px;
+	color: steelblue;
+	font-weight: 300;
 }
 
 .aboutme > p{
@@ -149,7 +155,7 @@ li a:hover{
 	width: 100%;
 	/*background-color: orange;*/
 	
-	border-bottom: 1px solid #663399;
+	border-bottom: 1px solid steelblue;
 }
 
 .aboutme-recuadro2{
@@ -158,30 +164,144 @@ li a:hover{
 	/*background-color: aqua;*/
 }
 
-/*.iconos ul{
-	width:50%;
-}*/
 
+/*===================== Iconos Datos Personales =============*/
 
 .iconos li{
     display: inline-block;
     width: 24%;
-    padding-top: 32px
+    padding-top: 25px
+}
+
+.fa-user-o {
+    font-size: 1.5em;
+    border: 2px solid steelblue;
+    border-radius: 100px;
+    padding: 10px;
+    color:  steelblue;
+    
+}
+
+.fa-user-o:before {
+    content: "\f2c0";
+    /*font-size: 20px;*/
 }
 
 .fa-birthday-cake {
     font-size: 1.5em;
-    border: 2px solid #663399;
+    border: 2px solid steelblue;
     border-radius: 100px;
-    padding: 7px;
-    color:  #663399;
-    
+    padding: 10px;
+    color:  steelblue;
+}
+
+.fa-birthday-cake:before {
+    content: "\f2c0";
+   /* font-size: 20px;*/
+}
+
+.fa-envelope-o {
+    font-size: 1.5em;
+    border: 2px solid steelblue;
+    border-radius: 100px;
+    padding: 10px;
+    color:  steelblue;
+}
+
+.fa-envelope-o:before {
+    content: "\f2c0";
+    /*font-size: 20px;*/
+}
+
+.fa-home {
+    font-size: 1.5em;
+    border: 2px solid steelblue;
+    border-radius: 100px;
+    padding: 10px;
+    color:  steelblue;
+}
+
+.fa-home:before {
+    content: "\f2c0";
+   /* font-size: 20px;*/
 }
 
 .datos_iconos li{
 	display: inline-block;
-    padding-top: 27px;
+    padding-top: 25px;
     width: 24%;
-    font-size: 0.75em;
+    font-size: 1em;
     color: white;  
 }
+
+/*===================== Iconos RRSS =============*/
+
+
+
+.iconos_RRSS li{
+	display: inline-block;
+	width: 24%;
+	padding-top: 60px;
+}
+
+.fa-instagram{
+	color: steelblue;
+}
+
+.fa-facebook-square{
+	color:steelblue;
+}
+
+.fa-pinterest{
+	color:steelblue;
+}
+
+.fa-linkedin{
+	color: steelblue;
+}
+
+.fa-instagram:hover{
+	color: purple;
+}
+
+.fa-facebook-square:hover{
+	color:#3b5998;
+}
+
+.fa-pinterest:hover{
+	color:#cb2027;
+}
+
+.fa-linkedin:hover{
+	color: #0077b5;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 30px;
+
+}
+
+.fa-facebook-square:before{
+	 content: "\f16d";
+    font-size: 30px;
+}
+
+
+.fa-pinterest:before {
+    content: "\f16d";
+    font-size: 30px;
+
+}
+
+.fa-linkedin:before{
+	 content: "\f16d";
+    font-size: 30px;
+}
+/*@media screen and (min-width: 2000px){
+
+header img{
+	max-width: 1500px;
+}
+
+}*/
