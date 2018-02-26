@@ -13,6 +13,25 @@ body{
 	font-family: montserrat, sans-serif;
 }
 
+h2{
+	text-align: center;
+    padding: 40px 0px;
+    color: steelblue;
+    font-weight: 400;
+}
+
+
+h3{
+	text-align: left;
+	color: steelblue;
+	font-weight: 200;
+}
+
+strong{
+	color: steelblue;
+}
+
+
 #contenedor{
 	height: 100%;
 	width:100%;
@@ -20,6 +39,8 @@ body{
 	background-size: cover;*/
 	
 }
+
+/*========================================== HEADER ========================================0*/
 
 header{
 	width:100%;
@@ -38,11 +59,8 @@ header img{
 
 }
 
-strong{
-	color: steelblue;
-}
 
-/*-------  Menu  ---------*/
+/*========================================== Menu ========================================0*/
 
 
 nav{
@@ -123,12 +141,12 @@ nav li a:hover{
 	/*padding: 20PX;*/
 }
 
-.aboutme > h2{
+/*.aboutme > h2{
 	text-align: center;
 	padding: 20px;
 	color: steelblue;
 	font-weight: 300;
-}
+}*/
 
 .aboutme > p{
 	text-align: center;
@@ -146,7 +164,7 @@ nav li a:hover{
     /*border: 2px solid #c100c1;*/
     /* background-color: #181844; */
     /*border-radius: 5px;*/
-    top: 41%;
+    top: 48%;
     left: 14%;
 }
 
@@ -307,7 +325,7 @@ header img{
 
 }*/
 
-/*--------------------------Skills-------------------*/
+/*--------------------------Habilidades Profesionales-------------------*/
 
 .skills_contenedor{
 	width: 100%;
@@ -318,12 +336,23 @@ header img{
 
 }
 
-.skills_contenedor > h2{
+/*.skills_contenedor > h2{
 	text-align: center;
-	padding: 20px;
+    padding: 40px 0px;
+    color: steelblue;
+    font-weight: 400;
+}*/
+
+
+.skills_contenedor > h3{
+	text-align: left;
 	color: steelblue;
-	font-weight: 300;
+	font-weight: 200;
+	position: absolute;
+    left: 16%;
 }
+
+/*========================================== Barras de progreso ==========================*/
 
 .skills_contenedor ul{
 	/*margin-left: 50px;*/
@@ -338,10 +367,39 @@ header img{
 	display: inline-block;
 }
 
-/*.skills_contenedor li img{
-	margin-bottom: 5px;
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 4px;
+    /*padding: 5px;*/
+    width: 300px;
+    /*margin: 50px 0;*/
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+}
 
-}*/
+.progress-bar span {
+    display: /*inline-*/block; /*Hemos cambiado "inline-block" por "block" para que el relleno (span) encaje dentro la clase .progress-bar*/
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;    
+}
+
+.photoshop span {
+    background-color: #31c5f0;   
+}
+
+.illustrator span{
+	 background-color: #ff7c00; 
+}
+
+.indesign span{
+	 background-color: #ff479b; 
+}
+
+.muse span{
+	 background-color: #e3f45c; 
+}
 
 .ps{
 	position: absolute;
@@ -396,36 +454,3 @@ header img{
 }
 
 
-.progress-bar {
-    background-color: #1a1a1a;
-    height: 4px;
-    /*padding: 5px;*/
-    width: 300px;
-    /*margin: 50px 0;*/
-    border-radius: 5px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
-}
-
-.progress-bar span {
-    display: /*inline-*/block; /*Hemos cambiado "inline-block" por "block" para que el relleno (span) encaje dentro la clase .progress-bar*/
-    height: 100%;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-    transition: width .4s ease-in-out;    
-}
-
-.photoshop span {
-    background-color: #31c5f0;   
-}
-
-.illustrator span{
-	 background-color: #ff7c00; 
-}
-
-.indesign span{
-	 background-color: #ff479b; 
-}
-
-.muse span{
-	 background-color: #e3f45c; 
-}
