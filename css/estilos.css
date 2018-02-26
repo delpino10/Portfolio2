@@ -326,9 +326,11 @@ header img{
 }
 
 .skills_contenedor ul{
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 	list-style: none;
-
+	position: absolute;
+	top: 25%;
+	left: 11%;
 }
 
 .skills_contenedor li{
@@ -336,16 +338,69 @@ header img{
 	display: inline-block;
 }
 
-.skills_contenedor li img{
+/*.skills_contenedor li img{
 	margin-bottom: 5px;
 
+}*/
+
+.ps{
+	position: absolute;
+	top: 26%;
+    left: 16%;
+    
 }
+
+.ps span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.ai{
+	position: absolute;
+	top: 26%;
+    left: 56%;
+    
+}
+
+.ai span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.id{
+	position: absolute;
+	top: 43%;
+    left: 16%;
+    
+}
+
+.id span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.mu{
+	position: absolute;
+	top: 43%;
+    left: 56%;
+    
+}
+
+.mu span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
 
 .progress-bar {
     background-color: #1a1a1a;
     height: 4px;
     /*padding: 5px;*/
-    width: 350px;
+    width: 300px;
     /*margin: 50px 0;*/
     border-radius: 5px;
     box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
@@ -359,6 +414,18 @@ header img{
     transition: width .4s ease-in-out;    
 }
 
-.blue span {
-    background-color: #34c2e3;   
+.photoshop span {
+    background-color: #31c5f0;   
+}
+
+.illustrator span{
+	 background-color: #ff7c00; 
+}
+
+.indesign span{
+	 background-color: #ff479b; 
+}
+
+.muse span{
+	 background-color: #e3f45c; 
 }
