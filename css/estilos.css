@@ -265,7 +265,8 @@ nav li a:hover{
 }
 
 .fa-facebook-square:hover{
-	color:#3b5998;
+	color:#8b9dc3;
+	/*color:#fff;*/
 }
 
 .fa-pinterest:hover{
@@ -273,7 +274,7 @@ nav li a:hover{
 }
 
 .fa-linkedin:hover{
-	color: #0077b5;
+	color:#fff;
 }
 
 .fa-instagram:before {
@@ -311,5 +312,53 @@ header img{
 .skills_contenedor{
 	width: 100%;
 	height:100%;
-	background-color: #2F4F4F;
+	margin:0px;
+	background-color: #262727;
+	position: relative;
+
+}
+
+.skills_contenedor > h2{
+	text-align: center;
+	padding: 20px;
+	color: steelblue;
+	font-weight: 300;
+}
+
+.skills_contenedor ul{
+	margin-left: 50px;
+	list-style: none;
+
+}
+
+.skills_contenedor li{
+	margin: 50px 50px;
+	display: inline-block;
+}
+
+.skills_contenedor li img{
+	margin-bottom: 5px;
+
+}
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 4px;
+    /*padding: 5px;*/
+    width: 350px;
+    /*margin: 50px 0;*/
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+}
+
+.progress-bar span {
+    display: /*inline-*/block; /*Hemos cambiado "inline-block" por "block" para que el relleno (span) encaje dentro la clase .progress-bar*/
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;    
+}
+
+.blue span {
+    background-color: #34c2e3;   
 }
