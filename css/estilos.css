@@ -78,21 +78,25 @@ nav ul{
 }
 
 nav li{
-	display:inline;
+	display:inline-block;
 	float: right;
 }
 
 nav li a {
-	display: inline-block;
+	display: block;
     color: white;
     font-size: 0.75em;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: border-bottom .3s;
+    
 }
+
 
 nav li a:hover{
 	border-bottom: 5px solid steelblue;
+	
 }
 
 .contenedor-intro{
@@ -111,6 +115,8 @@ nav li a:hover{
 .intro{
 	font-size: 3em;
 	line-height: 0.9;
+	position: absolute;
+    top: 57%;
 }
 
 .intro2{
@@ -119,8 +125,13 @@ nav li a:hover{
     font-size: 15px;
     color: steelblue;
     padding-top: 25px;
-   
+    padding: 0px;
+    text-align: left;
+   	position: absolute;
+   	top: 46%;
 }
+
+
 /*---------------------------------------------header--------------------------------------------*/
 
 
