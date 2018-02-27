@@ -13,6 +13,25 @@ body{
 	font-family: montserrat, sans-serif;
 }
 
+h2{
+	text-align: center;
+    padding: 40px 0px;
+    color: steelblue;
+    font-weight: 400;
+}
+
+
+h3{
+	text-align: left;
+	color: steelblue;
+	font-weight: 200;
+}
+
+strong{
+	color: steelblue;
+}
+
+
 #contenedor{
 	height: 100%;
 	width:100%;
@@ -20,6 +39,8 @@ body{
 	background-size: cover;*/
 	
 }
+
+/*========================================== HEADER ========================================0*/
 
 header{
 	width:100%;
@@ -38,11 +59,8 @@ header img{
 
 }
 
-strong{
-	color: steelblue;
-}
 
-/*-------  Menu  ---------*/
+/*========================================== Menu ========================================0*/
 
 
 nav{
@@ -109,7 +127,7 @@ nav li a:hover{
 /*---------------------------------------------Content--------------------------------------------*/
 
 .aboutme-contenedor{
-	height: 90%;
+	height: 80%;
 	width: 100%;
 	position: relative;
 }
@@ -123,12 +141,12 @@ nav li a:hover{
 	/*padding: 20PX;*/
 }
 
-.aboutme > h3{
+/*.aboutme > h2{
 	text-align: center;
-	padding: 40px 0px;
+	padding: 20px;
 	color: steelblue;
 	font-weight: 300;
-}
+}*/
 
 .aboutme > p{
 	text-align: center;
@@ -146,7 +164,7 @@ nav li a:hover{
     /*border: 2px solid #c100c1;*/
     /* background-color: #181844; */
     /*border-radius: 5px;*/
-    top: 46%;
+    top: 48%;
     left: 14%;
 }
 
@@ -265,7 +283,8 @@ nav li a:hover{
 }
 
 .fa-facebook-square:hover{
-	color:#3b5998;
+	color:#8b9dc3;
+	/*color:#fff;*/
 }
 
 .fa-pinterest:hover{
@@ -273,7 +292,7 @@ nav li a:hover{
 }
 
 .fa-linkedin:hover{
-	color: #0077b5;
+	color:#fff;
 }
 
 .fa-instagram:before {
@@ -306,17 +325,132 @@ header img{
 
 }*/
 
-/*--------------------------Skills-------------------*/
+/*--------------------------Habilidades Profesionales-------------------*/
 
 .skills_contenedor{
 	width: 100%;
 	height:100%;
-	background-color: #1a1b1b;
+	margin:0px;
+	background-color: #262727;
+	position: relative;
+
 }
 
-.skills_contenedor h3{
+/*.skills_contenedor > h2{
 	text-align: center;
-	padding: 40px 0px;
+    padding: 40px 0px;
+    color: steelblue;
+    font-weight: 400;
+}*/
+
+
+.skills_contenedor > h3{
+	text-align: left;
 	color: steelblue;
-	font-weight: 300;
+	font-weight: 200;
+	position: absolute;
+    left: 16%;
 }
+
+/*========================================== Barras de progreso ==========================*/
+
+.skills_contenedor ul{
+	/*margin-left: 50px;*/
+	list-style: none;
+	position: absolute;
+	top: 25%;
+	left: 11%;
+}
+
+.skills_contenedor li{
+	margin: 50px 50px;
+	display: inline-block;
+}
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 4px;
+    /*padding: 5px;*/
+    width: 300px;
+    /*margin: 50px 0;*/
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+}
+
+.progress-bar span {
+    display: /*inline-*/block; /*Hemos cambiado "inline-block" por "block" para que el relleno (span) encaje dentro la clase .progress-bar*/
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;    
+}
+
+.photoshop span {
+    background-color: #31c5f0;   
+}
+
+.illustrator span{
+	 background-color: #ff7c00; 
+}
+
+.indesign span{
+	 background-color: #ff479b; 
+}
+
+.muse span{
+	 background-color: #e3f45c; 
+}
+
+.ps{
+	position: absolute;
+	top: 26%;
+    left: 16%;
+    
+}
+
+.ps span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.ai{
+	position: absolute;
+	top: 26%;
+    left: 56%;
+    
+}
+
+.ai span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.id{
+	position: absolute;
+	top: 43%;
+    left: 16%;
+    
+}
+
+.id span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+.mu{
+	position: absolute;
+	top: 43%;
+    left: 56%;
+    
+}
+
+.mu span{
+	color: white;
+    padding-left: 243px;
+    font-weight: 200;
+}
+
+
